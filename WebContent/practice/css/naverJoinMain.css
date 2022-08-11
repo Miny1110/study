@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+table {
+	font-family: 돋움;
+	font-size: 15px;
+	font-weight: bold;
+	width: 450px;
+}
+
+input{
+	border: 1px solid #c8c8c8;
+	width: 450px;
+	height: 50px;
+}
+
+input.birBox {
+	border: 1px solid #c8c8c8;
+	width: 140px;
+	height: 50px;
+}
+
+td.birTd{
+	width: 140px;
+	height: 50px;	
+}
+
+input.pBox{
+	border: 1px solid #c8c8c8;
+	width: 290px;
+	height: 50px;
+}
+
+select{
+	border: 1px solid #c8c8c8;
+	width: 456px;
+	height: 50px;
+}

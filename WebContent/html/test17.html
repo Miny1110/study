@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+	function bestSul() {
+		
+		var f = document.myForm;
+		
+		var cvalue = f.sul.length;
+		
+		for(var i=0;i<cvalue;i++){
+			
+			if(f.sul[i].checked){
+				
+				alert(f.sul[i].value + "를 좋아하는구나~");
+				return;
+			}
+			
+			
+		}
+			alert("술 싫어하냐?");
+	}
+
+</script>
+
+</head>
+<body>
+
+<form action="" name="myForm">
+
+<input type="radio" name="sul" value="소주">소주<br/>
+<input type="radio" name="sul" value="위스키">위스키<br/>
+<input type="radio" name="sul" value="보드카">보드카<br/>
+<input type="radio" name="sul" value="생맥주">생맥주<br/>
+<input type="radio" name="sul" value="막걸리">막걸리<br/>
+<input type="radio" name="sul" value="와인">와인<br/>
+<input type="radio" name="sul" value="꼬냑">꼬냑<br/>
+<input type="radio" name="sul" value="고량주">고량주<br/>
+
+<a href="javascript:bestSul();">
+<img src="./image/btn_poll01.gif">
+</a>
+
+</form>
+
+</body>
+</html>

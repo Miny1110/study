@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+	function idpwCheck() {
+		
+		var f = document.myForm;
+		//변수에 함수를 넣는다.
+		
+		if(!f.id.value){
+			alert("아이디를 입력하세요!");
+			document.myForm.id.focus(); //id에 포커스 갖다놔라
+			return;
+		}
+		
+		if(!f.pwd.value){
+			alert("패스워드를 입력하세요!");
+			document.myForm.pwd.focus(); //id에 포커스 갖다놔라
+			return;
+		}
+		
+		alert("로그인 성공!");
+	
+	}
+	
+/*
+	function idpwCheck() {
+		
+		if(document.myForm.id.value==""){
+			alert("아이디를 입력하세요!");
+			document.myForm.id.focus(); //id에 포커스 갖다놔라
+			return;
+		}
+		
+		if(document.myForm.pwd.value==""){
+			alert("패스워드를 입력하세요!");
+			document.myForm.pwd.focus(); //id에 포커스 갖다놔라
+			return;
+		}
+		
+		alert("로그인 성공!");
+
+	}
+*/
+
+</script>
+</head>
+
+
+<body>
+
+<form action="" name="myForm">
+	<table>
+
+		<tr>
+			<td>
+			<input type="text" class="box" name="id">
+			</td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<td>
+			<input type="password" class="box" name="pwd">
+			</td>
+			<td><a href="javascript:idpwCheck();"><img src="./image/btn_login.gif"></a></td>
+		</tr>
+
+		<tr>
+			<td><input type="checkbox">아이디 저장</td>
+			<td><input type="checkbox">보안접속</td>
+		</tr>
+
+	</table>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body{
+	font-size: 20pt;
+}
+<!-- 바디 안에 있는 모든 폰트 사이즈를 11로 맞춘다. 일반텍스트(폰트 설정이 있는 태그로 묶이지 않은 텍스트)만 해당된다.
+
+table{
+	font-family: "궁서";
+}
+
+td{
+	font-family: "궁서";
+}
+
+span.cRed{
+	color: red;
+}
+
+span.cBlue{
+	color: blue;
+}
